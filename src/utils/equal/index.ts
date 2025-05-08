@@ -1,0 +1,1 @@
+export type Equal<T1 extends unknown, T2 extends unknown> = (<T>() => T extends T1 ? 1 : 0) extends (<T>() => T extends T2 ? 1 : 0) ? true : false
